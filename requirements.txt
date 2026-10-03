@@ -1,0 +1,6 @@
+# Runtime dependencies: none. wordcount.py uses the standard library only.
+#
+# The test runner is the single declared dependency, pinned to a range that
+# already matches the interpreter's installed pytest so `pip install -r
+# requirements.txt` succeeds offline as well as on a clean machine.
+pytest>=7.4,<10

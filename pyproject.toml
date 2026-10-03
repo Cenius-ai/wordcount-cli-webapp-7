@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wordcount-cli"
+version = "0.3.0"
+description = "Print the number of words in a UTF-8 text file: one file, standard library only."
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.scripts]
+wordcount = "wordcount:cli"
+
+[tool.setuptools]
+py-modules = ["wordcount"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
